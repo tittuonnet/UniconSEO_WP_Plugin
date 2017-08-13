@@ -27,6 +27,15 @@ function unicon_seo_html($post)
 {
   ?>
 <main class="uniconMain">
+  <h4>Snippet Preview</h4>
+  <div class="uniconSnippetPreview">
+    <p class="uniconPreviewTitle"><a href="#">Home - Parcx.io</a></p>
+    <p class="uniconPreviewLink">https://parcx.io</p>
+    <p class="uniconPreviewDescription">Lorem ipsum dollar get nu lorem started in ipsum dollar unbiased lorem ipsum generated in 1987 founded by Lorem group of companies from ipsum town.</p>
+  </div>
+</main>
+<main class="uniconMain">
+  <h4>Snippet Editor</h4>
   <input id="PageSEO" class="uniconHidden uniconTab" type="radio" name="tabs" checked>
   <label for="PageSEO" class="uniconTab">Page SEO</label>
 
@@ -47,26 +56,46 @@ function unicon_seo_html($post)
     </div>
     <div class="row uniconRow">
       <label class="uniconLabel">Page Description</label>
-      <textarea class="large-text uniconTextArea" placeholder="Page Description"></textarea>
+      <textarea class="large-text uniconTextArea" name="page_description" placeholder="Page Description"></textarea>
     </div>
   </section>
 
   <section id="FacebookOGContent" class="unicon">
-    <p>
-      Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
-    </p>
-    <p>
-      Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
-    </p>
+    <div class="row uniconRow">
+      <label class="uniconLabel">Facebook OG Title</label>
+    	<input class="large-text uniconInputbox" type="text" name="facebook_og_title" placeholder="Facebook Opengraph Title" id="facebook_og_title" spellcheck="true" autocomplete="off">
+    </div>
+    <div class="row uniconRow">
+      <label class="uniconLabel">Facebook OG Image</label>
+      <div class="row">
+        <div class="uniconW80">
+          <input id="uniconSEO-Facebook-OG-IMG" class="large-text uniconInputbox" type="text" name="facebook_og_image" placeholder="Facebook Opengraph Image URL" id="facebook_og_image" spellcheck="true" autocomplete="off">
+        </div>
+        <div class="uniconW20">
+          <input id="uniconSEO-image_button" class="uniconUploadButton button" type="button" value="Upload Image">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="row uniconRow">
+      <label class="uniconLabel">Facebook OG Description</label>
+      <textarea class="large-text uniconTextArea" name="facebook_og_description" placeholder="Facebook OG Description"></textarea>
+    </div>
   </section>
 
   <section id="TwitterCardContent" class="unicon">
-    <p>
-      Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
-    </p>
-    <p>
-      Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
-    </p>
+    <div class="row uniconRow">
+      <label class="uniconLabel">Twitter card Title</label>
+    	<input class="large-text uniconInputbox" type="text" name="twitter_card_title" placeholder="Twitter card Title" id="facebook_og_title" spellcheck="true" autocomplete="off">
+    </div>
+    <div class="row uniconRow">
+      <label class="uniconLabel">Twitter card Image</label>
+    	<input class="large-text uniconInputbox" type="text" name="twitter_card_image" placeholder="Twitter card Image URL" id="facebook_og_image" spellcheck="true" autocomplete="off">
+    </div>
+    <div class="row uniconRow">
+      <label class="uniconLabel">Twitter card Description</label>
+      <textarea class="large-text uniconTextArea" name="twitter_card_description" placeholder="Twitter card Description"></textarea>
+    </div>
   </section>
 
 </main>

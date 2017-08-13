@@ -1,6 +1,23 @@
+.clear {
+  clear: both;
+}
+.uniconW20 {
+  width:20%;
+  float: left;
+}
+.uniconW80 {
+  width:80%;
+  float: left;
+}
+.uniconUploadButton {
+  text-align: center;
+  height: 35px !important;
+  margin-top: 9px !important;
+  margin-left: 3px !important;
+}
 .uniconLabel {
   font-size: 14px !important;
-  font-weight: 400;
+  font-weight: 500;
   color: #2979FF;
 }
 .uniconInputbox {
@@ -33,7 +50,24 @@ main.unicon {
   margin: 0 auto;
   background: #fff;
 }
-
+.uniconSnippetPreview {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}
+.uniconPreviewTitle a {
+  font-size: 16px;
+  color: #1e0fbe !important;
+  font-weight: 800;
+  text-decoration: none;
+}
+.uniconPreviewLink {
+  color:#006621 !important;
+  margin-top: -15px;
+  text-decoration: underline;
+}
+.uniconPreviewDescription {
+  margin-top: -10px;
+}
 section.unicon {
   display: none;
   padding: 20px 20px;
@@ -42,9 +76,6 @@ section.unicon {
   border-right:1px solid #ddd;
   border-bottom:1px solid #ddd;
 }
-
-
-
 label.uniconTab {
   display: inline-block;
   margin: 0 0 -1px;
