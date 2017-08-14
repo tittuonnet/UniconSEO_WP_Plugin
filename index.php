@@ -53,10 +53,12 @@ function unicon_seo_html($post)
     <div class="row uniconRow">
       <label class="uniconLabel">Page Title</label>
     	<input class="large-text uniconInputbox" type="text" name="page_title" placeholder="Page Title" id="page_title" spellcheck="true" autocomplete="off">
+      <label class="uniconTextLimit"><span id="pageTitleLimit">0</span> of 70 characters used</label>
     </div>
     <div class="row uniconRow">
       <label class="uniconLabel">Page Description</label>
-      <textarea class="large-text uniconTextArea" name="page_description" placeholder="Page Description"></textarea>
+      <textarea class="large-text uniconTextArea" name="page_description" id="page_description" placeholder="Page Description"></textarea>
+      <label class="uniconTextLimit"><span id="pageDescriptionLimit">0</span> of 160 characters used</label>
     </div>
   </section>
 
@@ -72,7 +74,7 @@ function unicon_seo_html($post)
           <input id="uniconSEO-Facebook-OG-IMG" class="large-text uniconInputbox" type="text" name="facebook_og_image" placeholder="Facebook Opengraph Image URL" id="facebook_og_image" spellcheck="true" autocomplete="off">
         </div>
         <div class="uniconW20">
-          <input id="uniconSEO-image_button" class="uniconUploadButton button" type="button" value="Upload Image">
+          <input id="uniconSEO-FB-image_button" class="uniconUploadButton button" type="button" value="Upload Image">
         </div>
       </div>
       <div class="clear"></div>
@@ -90,7 +92,15 @@ function unicon_seo_html($post)
     </div>
     <div class="row uniconRow">
       <label class="uniconLabel">Twitter card Image</label>
-    	<input class="large-text uniconInputbox" type="text" name="twitter_card_image" placeholder="Twitter card Image URL" id="facebook_og_image" spellcheck="true" autocomplete="off">
+      <div class="row">
+        <div class="uniconW80">
+          <input id="uniconSEO-Twitter-Card-IMG" class="large-text uniconInputbox" type="text" name="twitter_card_image" placeholder="Twitter card Image URL" spellcheck="true" autocomplete="off">
+        </div>
+        <div class="uniconW20">
+          <input id="uniconSEO-TW-image_button" class="uniconUploadButton button" type="button" value="Upload Image">
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
     <div class="row uniconRow">
       <label class="uniconLabel">Twitter card Description</label>

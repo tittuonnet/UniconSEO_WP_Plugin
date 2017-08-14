@@ -1,6 +1,9 @@
 .clear {
   clear: both;
 }
+.uniconRed {
+  border: 1px solid #F44336 !important;
+}
 .uniconW20 {
   width:20%;
   float: left;
@@ -31,8 +34,10 @@
 .uniconRow {
   margin-bottom: 15px !important;
 }
-
-
+.uniconTextLimit {
+  font-size: 10px;
+  color:#616161;
+}
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -56,14 +61,12 @@ main.unicon {
 }
 .uniconPreviewTitle a {
   font-size: 16px;
-  color: #1e0fbe !important;
-  font-weight: 800;
+  color: #1a0dab !important;
   text-decoration: none;
 }
 .uniconPreviewLink {
   color:#006621 !important;
   margin-top: -15px;
-  text-decoration: underline;
 }
 .uniconPreviewDescription {
   margin-top: -10px;
